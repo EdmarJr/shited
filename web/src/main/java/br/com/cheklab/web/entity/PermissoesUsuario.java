@@ -15,7 +15,7 @@ public class PermissoesUsuario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
-	private Long id;
+	public Long id;
 
 	@ManyToOne
 	@JoinColumn(referencedColumnName = "email", name = "email")
