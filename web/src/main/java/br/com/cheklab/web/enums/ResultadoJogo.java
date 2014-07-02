@@ -9,8 +9,8 @@ public enum ResultadoJogo {
 		this.codigo = codigo;
 	}
 
+	public Long getCodigo() {
 		return codigo;
-		public Long getCodigo() {
 	}
 
 }
