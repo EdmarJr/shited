@@ -26,6 +26,9 @@ public class PalpiteJogo {
 	@Enumerated(EnumType.STRING)
 	@Column
 	private ResultadoJogo resultado;
+	@ManyToOne
+	@JoinColumn(name = "cartela_id", referencedColumnName = "id")
+	private Cartela cartela;
 
 	public Long getId() {
 		return id;
